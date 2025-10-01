@@ -503,7 +503,7 @@
 	desc = "A vicious wave-bladed dagger from the Underdark."
 	force = 18
 	last_used = 0
-	is_silver = TRUE
+	is_silver = FALSE
 
 /obj/item/rogueweapon/huntingknife/idagger/navaja
 	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/cut,  /datum/intent/dagger/thrust/pick)
