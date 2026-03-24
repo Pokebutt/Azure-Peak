@@ -942,9 +942,7 @@
 	desc = "A once-elegant mithril dagger, who's sunless presence has long since been overshadowed by its vicious bite."
 	force = 18 
 	last_used = 0
-	is_silver = FALSE //Intended, as it's technically not silver - or at the very least, so divorced from traditional silver that it no longer retains its properties.
-	smeltresult = /obj/item/ingot/drow
-	smelt_bar_num = 1
+	is_silver = TRUE
 
 /obj/item/rogueweapon/huntingknife/idagger/navaja
 	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/cut,  /datum/intent/dagger/thrust/pick)
