@@ -8,8 +8,10 @@
 	category_tags = list(CTAG_MERCENARY)
 	cmode_music = 'sound/music/combat_steppe.ogg'
 	subclass_languages = list(/datum/language/aavnic)
-	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/tame/saddled
 	extra_context = "This subclass has 4 loadouts with various stats, skills & equipment."
+	subclass_virtues = list(
+		/datum/virtue/utility/riding
+	)
 	subclass_skills = list(
 	//Universal skills
 		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
