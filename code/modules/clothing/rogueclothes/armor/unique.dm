@@ -61,7 +61,7 @@
 	desc = "A sturdy set of dwarven plate armor, forged in the old ways. It cannot be worked on without intrinsic dwarven knowledge."
 	icon = 'icons/roguetown/clothing/special/race_armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/race_armor.dmi'
-	allowed_race = list(/datum/species/dwarf, /datum/species/dwarf/mountain)
+	allowed_race = list(/datum/species/dwarf, /datum/species/dwarf/mountain, /datum/species/dwarf/gnome)
 	icon_state = "dwarfchest"
 	item_state = "dwarfchest"
 	smelt_bar_num = 4
