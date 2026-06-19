@@ -81,17 +81,21 @@
 						if(istype(candidate, /obj/item/natural/bundle))
 							var/obj/item/natural/bundle/B = candidate
 							if(B.stacktype == needed_item)
-								if(B.amount > 1)
-									B.amount -= 1
+								var/turf/newloc = get_turf(B)
+							
+								// Create exactly one real item from the bundle
+								obj_to_use = new B.stacktype(newloc)
+							
+								// Remove only one from bundle count
+								B.amount--
+							
+								// Update or delete bundle properly
+								if(B.amount <= 0)
+									qdel(B)
+								else
 									B.update_bundle()
-									var/turf/newloc = get_turf(B)
-									obj_to_use = new B.stacktype(newloc)
-									if(B.amount == 1)
-										new B.stacktype(newloc)
-										qdel(B)
-									else if(B.amount <= 0)
-										qdel(B)
-									break
+							
+								break
 						else if(istype(candidate, needed_item))
 							obj_to_use = candidate
 							break
