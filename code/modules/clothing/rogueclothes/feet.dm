@@ -282,7 +282,7 @@
 	desc = "Clatters mightily."
 	icon = 'icons/roguetown/clothing/special/race_armor.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/race_armor.dmi'
-	allowed_race = list(/datum/species/dwarf, /datum/species/dwarf/mountain)
+	allowed_race = list(/datum/species/dwarf, /datum/species/dwarf/mountain, , /datum/species/dwarf/gnome)
 	icon_state = "dwarfshoe"
 	item_state = "dwarfshoe"
 
